@@ -1,6 +1,8 @@
 " Xinuc's .vimrc
 " by Nugroho Herucahyono <xinuc@xinuc.org>
 
+set encoding=utf-8
+
 " use pathogen
 call pathogen#infect()
 
@@ -83,11 +85,8 @@ map <leader>l :set list!<CR>
 nnoremap <leader><leader> <c-^>
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>e :edit %%
+map <leader>o :edit %%
 map <leader>v :view %%
-
-let g:CommandTMatchWindowReverse=1
-let g:CommandTMaxFiles=10000
 
 syntax on
 filetype plugin indent on
@@ -103,5 +102,34 @@ set wildignore+=tmp/**/*,public/system/**/*,public/uploads/**/*,log/**/*
 map! ;l <ESC>
 map ;l <ESC>
 
+set guifont=Monaco\ for\ Powerline
+
 " setting color
-color tomorrow-night
+" color tomorrow-night
+color badwolf
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+
+" ctrlP
+let g:ctrlp_working_path_mode = 0
+map <leader>t :CtrlP<CR>
+map <leader>r :CtrlPBuffer<CR>
+
+" ctrlp.vim Rails
+map <leader>tm :CtrlP app/models<CR>
+map <leader>tc :CtrlP app/controllers<CR>
+map <leader>tv :CtrlP app/views<CR>
+map <leader>ta :CtrlP app/assets<CR>
+map <leader>ts :CtrlP spec<CR>
+
+" quick no hl
+map <C-CR> :nohlsearch<CR>
+
+" haskell mode
+let g:haddock_browser="/usr/bin/firefox"
+
+" vimclojure
+let vimclojure#HighlightBuiltins =1
+let vimclojure#ParenRainbow =1
+let vimclojure#HighlightContrib=1
+let vimclojure#DynamicHighlighting=1
