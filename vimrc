@@ -112,8 +112,8 @@ set laststatus=2
 
 " ctrlP
 let g:ctrlp_working_path_mode = 0
-map <leader>t :CtrlP<CR>
-map <leader>r :CtrlPBuffer<CR>
+map <localleader>tt :CtrlP<CR>
+map <localleader>tr :CtrlPBuffer<CR>
 
 " ctrlp.vim Rails
 map <localleader>tm :CtrlP app/models<CR>
