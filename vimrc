@@ -116,11 +116,11 @@ map <leader>t :CtrlP<CR>
 map <leader>r :CtrlPBuffer<CR>
 
 " ctrlp.vim Rails
-map <leader>tm :CtrlP app/models<CR>
-map <leader>tc :CtrlP app/controllers<CR>
-map <leader>tv :CtrlP app/views<CR>
-map <leader>ta :CtrlP app/assets<CR>
-map <leader>ts :CtrlP spec<CR>
+map <localleader>tm :CtrlP app/models<CR>
+map <localleader>tc :CtrlP app/controllers<CR>
+map <localleader>tv :CtrlP app/views<CR>
+map <localleader>ta :CtrlP app/assets<CR>
+map <localleader>ts :CtrlP spec<CR>
 
 " quick no hl
 map <C-CR> :nohlsearch<CR>
