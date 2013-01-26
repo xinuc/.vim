@@ -136,3 +136,13 @@ let vimclojure#DynamicHighlighting=1
 
 " easymotion
 let g:EasyMotion_leader_key = '<localleader>'
+
+" remove trailing whitespace
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType c,cpp,java,php,ruby,python,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
