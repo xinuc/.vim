@@ -146,3 +146,9 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType c,cpp,java,php,ruby,python,javascript autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+" new ruby hash syntax
+fun! NewHashSyntax()
+  %s/:\([^ ]*\)\(\s*\)=>/\1:/g
+endfun
+map <localleader>hh :call NewHashSyntax()<CR>
