@@ -61,3 +61,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = git://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/vim-extradite"]
+	path = bundle/vim-extradite
+	url = git://github.com/int3/vim-extradite.git
