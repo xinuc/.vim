@@ -149,6 +149,10 @@ autocmd FileType c,cpp,java,php,ruby,python,javascript autocmd BufWritePre <buff
 
 " new ruby hash syntax
 fun! NewHashSyntax()
-  %s/:\([^ ]*\)\(\s*\)=>/\1:/g
+  "%s/:\([^ ]*\)\(\s*\)=>/\1:/g
+  %s/:\([a-zA-Z0-9_]\+\)\(\s*\)=>/\1:/g
 endfun
 map <localleader>hh :call NewHashSyntax()<CR>
+
+" the silver searcher
+let g:ackprg = 'ag --nogroup --nocolor --column'
