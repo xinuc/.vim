@@ -108,6 +108,7 @@ set guifont=Monaco\ for\ Powerline
 " color tomorrow-night
 color badwolf
 let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts=1
 set laststatus=2
 
 " ctrlP
