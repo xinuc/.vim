@@ -61,6 +61,3 @@
 [submodule "bundle/vim-extradite"]
 	path = bundle/vim-extradite
 	url = git://github.com/int3/vim-extradite.git
-[submodule "vim-airline"]
-	path = vim-airline
-	url = https://github.com/bling/vim-airline
