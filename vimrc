@@ -157,3 +157,5 @@ map <localleader>hh :call NewHashSyntax()<CR>
 
 " the silver searcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
