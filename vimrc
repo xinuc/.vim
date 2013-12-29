@@ -159,3 +159,6 @@ map <localleader>hh :call NewHashSyntax()<CR>
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
+
+" elixir
+imap <C-\> \|>
